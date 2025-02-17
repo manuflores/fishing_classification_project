@@ -28,10 +28,15 @@ After making some simple data exploration I found that whether boats are classif
 * relative displacement with respect to a previous timestep
 * previous 10 values of course,speed,lat,lon
 
-After these transformations I improved the accuracy of a Logistic Regression model to $0.85$, which I believed to be a good starting point to increase model complexity to arrive at a better accuracy. The linear separability can be visualized with a PCA: ![PCA](figs/pca.png)
+After these transformations I improved the accuracy of a Logistic Regression model to $0.85$, which I believed to be a good starting point to increase model complexity to arrive at a better accuracy. The linear separability can be visualized with a PCA: 
+
+
+<img src="figs/pca.png" alt="PCA" width="500">
 
 
 I found that a Random Forest model was a good performer achieving accuracy of $0.96$, and an F1-score of $0.97$. 
+
+<img src="figs/conf_mat_Random Forest.png" alt="Confusion Matrix" width="500">
 
 I performed 5-Fold cross validation to ensure that this model was not overfitting and found an accuracy of $0.9683 ± 0.0009$. 
 
