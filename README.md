@@ -40,5 +40,7 @@ I found that a Random Forest model was a good performer achieving accuracy of $0
 
 I performed 5-Fold cross validation to ensure that this model was not overfitting and found an accuracy of $0.9683 ± 0.0009$. 
 
+### Conclusions and next steps
+
 Using feature importance analysis I found that the Random Forest performed well by aggregating speed values of previous the timesteps. With this result, I predict that using an RNN or Transformer model that ingests data from a window of $k$ previous timesteps would be an even better predictive model.
 
