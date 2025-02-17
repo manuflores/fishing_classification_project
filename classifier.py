@@ -1,8 +1,12 @@
+"""
+Fishing classification using Scikit-learn.
+"""
+
 import argparse
 import os
 
-parser = argparse.ArgumentParser(description="Runs classifier")
-parser.add_argument("data_dir", type=str, help="Path to the directory containing the dataset.")
+parser = argparse.ArgumentParser(description="Runs fishing classifier script.")
+parser.add_argument("-ddir","--data_dir", type=str, help="Path to the directory containing the dataset.")
 args = parser.parse_args()
 
 import pandas as pd
