@@ -13,7 +13,7 @@ The main script can be run using:
 python classification.py --data_dir path_to_parquet
 ```
 
-You can also run the code interactively in Google colab: 
+You can also run the code interactively in [Google colab](https://colab.research.google.com/github/manuflores/fishing_classification_project/blob/main/classifier.ipynb)
 
 ### Design choices and analysis
 
